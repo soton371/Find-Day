@@ -9,20 +9,20 @@ try:
         if month > 0 and month < 13:
             year = int(input("enter year(ex.2021): "))
         else:
-            print('please enter valid month')
+            print('please enter valid month.')
     else:
-        print('please enter valid day')
+        print('please enter valid day.')
 
 except:
-    print('please enter integer value')
+    print('please enter integer value.')
     exit()
 
 if day==x.day and month==x.month and year==x.year:
-    print(x.strftime("%A"))
+    print(x.strftime("The day on %A"))
     exit()
 
 if year < 1000:
-    print('your year is invalid')
+    print('your year is invalid, please enter year > 1000.')
     exit()
 
 if month==4 and day>30 or month==6 and day>30 or month==8 and day>30 or month==9 and day>30 or month==11 and day>30:
@@ -33,19 +33,19 @@ elif month==2:
         if (year % 100) == 0:
             if (year % 400) == 0:
                 if day>29:
-                    print('please enter valid day')
+                    print('please enter valid day.')
                     exit()
             else:
                 if day>28:
-                    print('please enter valid day')
+                    print('please enter valid day.')
                     exit()
         else:
             if day > 29:
-                print('please enter valid day')
+                print('please enter valid day.')
                 exit()
     else:
         if day > 28:
-            print('please enter valid day')
+            print('please enter valid day.')
             exit()
 
 if month == 1:
@@ -127,33 +127,33 @@ if f<0:
     n = f%7
 
     if n == 0:
-        print('Sunday')
+        print('The day on Sunday')
     elif n == 1:
-        print('Monday')
+        print('The day on Monday')
     elif n == 2:
-        print('Tuesday')
+        print('The day on Tuesday')
     elif n == 3:
-        print('wednesday')
+        print('The day on Wednesday')
     elif n == 4:
-        print('Thursday')
+        print('The day on Thursday')
     elif n == 5:
-        print('Friday')
+        print('The day on Friday')
     elif n == 6:
-        print('Saturday')
+        print('The day on Saturday')
 else:
     r = f % 7
     if r == 0:
-        print('Sunday')
+        print('The day on Sunday')
     elif r == 1:
-        print('Monday')
+        print('The day on Monday')
     elif r == 2:
-        print('Tuesday')
+        print('The day on Tuesday')
     elif r == 3:
-        print('wednesday')
+        print('The day on wednesday')
     elif r == 4:
-        print('Thursday')
+        print('The day on Thursday')
     elif r == 5:
-        print('Friday')
+        print('The day on Friday')
     elif r == 6:
-        print('Saturday')
+        print('The day on Saturday')
 
